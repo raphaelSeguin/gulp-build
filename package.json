@@ -1,0 +1,34 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "treehouse-project #8",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-smushit": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelSeguin/gulp-build.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Raphaël Seguin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaelSeguin/gulp-build/issues"
+  },
+  "homepage": "https://github.com/raphaelSeguin/gulp-build#readme"
+}
