@@ -55,10 +55,10 @@ gulp.task('move-sass-map', function() {
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * html
 gulp.task('html',['compile-sass'], function () {
     return gulp.src('./index.html')
-        .pipe(useref())
-        .pipe(gulpif('*.js', uglify()))
-        .pipe(gulpif('*.css', minifycss()))
-        .pipe(gulp.dest('dist'));
+        .pipe( useref() )
+        .pipe( gulpif('*.js', uglify()) )
+        .pipe( gulpif('*.css', minifycss()) )
+        .pipe( gulp.dest('dist') );
 });
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * scripts
@@ -116,7 +116,7 @@ gulp.task('clean', function() {
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * build
 gulp.task('build', ['clean'], function() {
     gulp.start(['html', 'images']);
-    gulp.start(['move-sass-map', 'move-js-map']);
+    return gulp.start(['move-sass-map', 'move-js-map']);
 });
 
 /**
